@@ -63,7 +63,7 @@ Test with default options (brep = 200, num.grid = 100, u = 2/3, delta = 1/2, alp
 res <- CKW.test(Y, X)
 ```
 
-Test with options options (brep = 500, num.grid = sample size, u = 1/2, delta = 1/2, alpha = 0.95):
+Test with options (brep = 500, num.grid = sample size, u = 1/2, delta = 1/2, alpha = 0.95):
 ```
 res <- CKW.test(Y, X, brep = 500, num.grid = length(Y), u = 2/3, delta = 1/2, alpha = 0.95)
 ```
