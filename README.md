@@ -23,13 +23,13 @@ install.packages("foreach")
 The function CKW.test provides the test of the null of stochastic monotonicity between two continuous random variables Y and X, both supported on [0, 1], 
 
 ```
-H_0 : F_{Y|X}(y|x') \ge F_{Y|X}(y|x'') for all y, x', x'' \in (0, 1) with x' \le x''
+H_0 : F_{Y|X}(y|x') >= F_{Y|X}(y|x'') for all y, x', x'' in (0, 1) with x' <= x''
 ```
 
 against the alternative
 
 ```
-H_a : F_{Y|X}(y|x') < F_{Y|X}(y|x'') for some y, x', x'' \in (0, 1) with x' \le x''
+H_a : F_{Y|X}(y|x') < F_{Y|X}(y|x'') for some y, x', x'' in (0, 1) with x' <= x''
 ```
 
 Syntax:
@@ -39,7 +39,7 @@ CKW.test(Y, X, brep, num.grid, u, delta, alpha)
 ```
 
 where
-- `Y` and `X' are random variables that need to be tested.
+- `Y` and `X` are random variables that need to be tested.
 - `brep` is the number of bootstrap replications.
 - `num.grid` is the number of grid points on the empirical support of Y. The paper suggests the sample size the user uses. For computational purposes, the user can specify the fewer number of grid points to yield results more quickly. 
 - `u` and `delta` are tuning parameters which control the number of bandwidth values for the test statistic.  The default is set such that u = 2/3 and delta = 1/2. 
