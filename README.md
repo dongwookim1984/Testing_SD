@@ -69,4 +69,4 @@ res <- CKW.test(Y, X, brep = 500, num.grid = length(Y), u = 2/3, delta = 1/2, al
 ```
 
 # Reference
-[Chetverikov, D. Wilhelm, D. and Kim, D. (2018), "An adaptive test of stochastic monotonicity", 
+Chetverikov, D. Wilhelm, D. and Kim, D. (2018), "An adaptive test of stochastic monotonicity"
